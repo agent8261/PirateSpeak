@@ -11,7 +11,8 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 public class TranslateServiceImpl extends RemoteServiceServlet 
 		implements TranslateService
 {
-	private final LexiconStore lexicon = new LexiconStore("transactions-optional");
+	//private final LexiconStore lexicon = new LexiconStore("transactions-optional");
+	private final LexiconStoreOfy lexicon = new LexiconStoreOfy("transactions-optional");
 	
 	@Override
 	public String getTranslation(String orginal)
@@ -25,7 +26,7 @@ public class TranslateServiceImpl extends RemoteServiceServlet
 
 	@Override
 	public TreeSet<PirateLexicon> getAll()
-	{  return lexicon.getAllLexicon();  }
+	{  return null;  }
 	
 	public void delLexicon(String englishText)
 	{ lexicon.delLexicon(englishText);  }

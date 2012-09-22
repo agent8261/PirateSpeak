@@ -12,12 +12,13 @@ import javax.jdo.Transaction;
 
 import piratespeak.shared.PirateLexicon;
 
+// Demo using of persistence using JDO API
 public class LexiconStore
 {
 	private final PersistenceManagerFactory pmfactory;
 	private final PersistenceManager pmanger;
 	
-	LexiconStore(String config)
+	public LexiconStore(String config)
 	{	
 		this.pmfactory = JDOHelper.getPersistenceManagerFactory(config);
 		this.pmanger = pmfactory.getPersistenceManager();
