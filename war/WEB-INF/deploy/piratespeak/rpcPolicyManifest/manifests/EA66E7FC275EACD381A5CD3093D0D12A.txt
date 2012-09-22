@@ -1,0 +1,2 @@
+serviceClass: piratespeak.client.TranslateService
+path: 31A5E4395E7740AE0C915F10F2B0C6EC.gwt.rpc
